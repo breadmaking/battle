@@ -17,8 +17,6 @@ class Battle < Sinatra::Base
     end
 
     post '/names' do
-        # print params[:player1]
-        # print params[:player2]
         session[:player1] = params[:player1]
         session[:player2] = params[:player2]
         redirect '/play'
